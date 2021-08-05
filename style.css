@@ -1,0 +1,837 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "小塚ゴシック Pr6N";
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 1;
+  color: #000;
+  background-color: #fff;
+}
+@media (min-widht: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.header {
+  display: block;
+  list-style: none;
+  position: relative;
+}
+@media (min-width: 769px) {
+  .header {
+    display: block;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: content;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 125px;
+  }
+}
+.header .pc-carousel .carousel {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header .pc-carousel .carousel {
+    display: block;
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media (min-width: 769px) {
+  .header .pc-carousel .carousel img {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+.sub-header {
+  display: block;
+  list-style: none;
+}
+@media (min-width: 769px) {
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 125px;
+  }
+}
+
+.container {
+  margin: 0 0 2rem 0;
+}
+.container .title {
+  font-family: "BIZ UDPゴシック";
+  font-size: 10px;
+  margin: 2rem 0 0 24px;
+  padding: 0;
+}
+@media (min-width: 769px) {
+  .container .title {
+    font-size: 12px;
+    margin: 70px 0 0 145px;
+  }
+}
+.container .title span {
+  font-family: Bookman Old Style;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 769px) {
+  .container .title span {
+    font-size: 36px;
+  }
+}
+
+.header-nav-list-sp {
+  font-family: Bookman Old Style;
+  font-size: 24px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 4rem 0;
+  padding: 0;
+}
+@media (min-width: 769px) {
+  .header-nav-list-sp {
+    display: none;
+  }
+}
+.header-nav-list-sp li {
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  line-height: 2;
+  width: 18.5rem;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .header-nav-list-sp li {
+    display: none;
+  }
+}
+.header-nav-list-sp li:nth-of-type(2n + 1) {
+  border-left: 1px solid #000;
+}
+@media (min-width: 769px) {
+  .header-nav-list-sp li:nth-of-type(2n + 1) {
+    display: none;
+  }
+}
+.header-nav-list-sp li:nth-last-of-type(-n + 2) {
+  border-bottom: 1px solid #000;
+}
+@media (min-width: 769px) {
+  .header-nav-list-sp li:nth-last-of-type(-n + 2) {
+    display: none;
+  }
+}
+
+.header-sns-sp {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 769px) {
+  .header-sns-sp {
+    display: none;
+  }
+}
+.header-sns-sp li {
+  font-size: 24px;
+  margin: 0 0 30px 0;
+}
+@media (min-width: 769px) {
+  .header-sns-sp li {
+    display: none;
+  }
+}
+
+.header-info-pc {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header-info-pc {
+    display: block;
+  }
+  .header-info-pc .header-sns-pc {
+    display: flex;
+    list-style: none;
+    text-align: right;
+    margin: 75px 180px 17px 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  .header-info-pc .header-sns-pc li {
+    font-size: 24px;
+    padding: 0 0 0 50px;
+  }
+}
+
+.header-nav-list-pc {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header-nav-list-pc {
+    font-family: "Bookman Old Style";
+    font-size: 12px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 140px 0 0;
+    justify-content: flex-end;
+  }
+  .header-nav-list-pc li {
+    padding-left: 30px;
+  }
+}
+
+.container-header-pc {
+  display: none;
+}
+@media (min-width: 769px) {
+  .container-header-pc {
+    display: flex;
+    position: absolute;
+    mix-blend-mode: overlay;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .container-sp {
+    display: none;
+  }
+}
+
+.carousel .slick-dots {
+  bottom: 25px;
+}
+
+.header-title {
+  font-family: Bookman Old Style;
+  font-style: italic;
+  font-size: 36px;
+  margin: 0 0 100px 30px;
+  font-weight: 200;
+}
+@media (min-width: 769px) {
+  .header-title {
+    margin: 0 0 80px 200px;
+  }
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 110px;
+}
+@media (min-width: 769px) {
+  .about-content {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 180px;
+  }
+}
+.about-content .phot {
+  margin-bottom: 70px;
+}
+@media (min-width: 769px) {
+  .about-content .phot {
+    margin: 0 130px 0 180px;
+  }
+}
+.about-content .phot img {
+  border-radius: 50%;
+  width: 300px;
+  height: 400px;
+}
+@media (min-width: 769px) {
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) {
+  .about-content .content-list {
+    display: block;
+    text-align: left;
+    width: 330px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.about-content .content-list .oppucation {
+  font-family: "小塚ゴシック Pr6N";
+  color: #999999;
+  font-size: 12px;
+  margin: 0 0 30px 0;
+}
+.about-content .content-list h3 {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0;
+}
+@media (min-width: 769px) {
+  .about-content .content-list h3 {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+.about-content .content-list h3 .en {
+  color: #999999;
+  font-size: 16px;
+  font-family: "Bookman Old Style";
+  margin: 20px 0 45px 0;
+  padding: 0;
+}
+.about-content .content-list .info {
+  color: #666;
+  font-family: "小塚ゴシック Pr6N";
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+@media (min-width: 769px) {
+  .about-content .content-list .info {
+    margin-bottom: 70px;
+  }
+}
+.about-content .content-list .introduction-text {
+  color: #666;
+  font-family: "小塚ゴシック Pr6N";
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+.about-content .content-list .introduction-text p {
+  font-size: 10px;
+  margin: 0 50px;
+  line-height: 3;
+}
+@media (min-width: 769px) {
+  .about-content .content-list .introduction-text p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.about-content .content-list .introduction-text p:first-child {
+  margin-top: 0;
+}
+
+.skills-list {
+  display: flex;
+  margin: 0 40px 0 40px;
+  justify-content: space-between;
+  padding: 0;
+  flex-wrap: wrap;
+}
+@media (min-width: 769px) {
+  .skills-list {
+    display: flex;
+    margin: 0 200px 100px 200px;
+  }
+}
+.skills-list .skills-body {
+  display: block;
+  width: 130px;
+  padding: 0;
+  margin: 0 0 40px 0;
+  max-width: 100%;
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body {
+    display: flex;
+    width: auto;
+    height: 330px;
+    background-color: #ffffdb;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 45px;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body:nth-of-type(2n) {
+    flex-flow: row-reverse;
+    padding: 0 45px 0 60px;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body:nth-of-type(2) {
+    background-color: #ffe5e5;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body:nth-of-type(3) {
+    background-color: #ddffff;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body:nth-of-type(4) {
+    background-color: #fff4ea;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body .text-img {
+    width: 45%;
+    padding: 0;
+  }
+}
+.skills-list .skills-body .text-img img {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body .text-img img {
+    align-items: center;
+    margin: 0;
+  }
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body .skills-text {
+    display: block;
+    align-items: center;
+    width: 45%;
+  }
+}
+.skills-list .skills-body p {
+  font-family: "HGP創英ﾌﾟﾚｾﾞﾝｽEB";
+  font-size: 12px;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body p {
+    font-size: 23.23px;
+    line-height: 3;
+  }
+}
+.skills-list .skills-body .skills-discription {
+  font-size: 10px;
+  font-family: "小塚ゴシック Pr6N";
+  line-height: 3;
+}
+@media (min-width: 769px) {
+  .skills-list .skills-body .skills-discription {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .skills-body:nth-of-type(2n) .text-img {
+    width: 45%;
+  }
+}
+@media (min-width: 769px) {
+  .skills-body:nth-of-type(2n) .skills-text {
+    display: block;
+    align-items: center;
+    width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  .contact .container {
+    background-color: #eae8e1;
+    border: 1px solid #000;
+    margin: 0 200px 60px;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+}
+.contact .container p {
+  font-family: "小塚ゴシック Pr6N";
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+@media (min-width: 769px) {
+  .contact .container p {
+    padding-bottom: 60px;
+  }
+}
+.contact .container .sns {
+  font-size: 40px;
+  margin: 0 11rem 3.7rem 11rem;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+@media (min-width: 769px) {
+  .contact .container .sns {
+    text-align: center;
+    margin: 0;
+    padding: 60px 40% 45px;
+  }
+}
+.contact .container .sns ul {
+  padding: 0;
+}
+
+.contact-form {
+  margin: 35px;
+  padding: 3px;
+}
+@media (min-width: 769px) {
+  .contact-form {
+    padding: 0;
+    margin: 0;
+  }
+}
+.contact-form .list {
+  font-family: "BIZ UDPゴシック";
+  color: #999999;
+  font-size: 16px;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 769px) {
+  .contact-form .list {
+    max-width: 100%;
+    padding: 0 24%;
+  }
+}
+.contact-form .list li {
+  margin: 0;
+  padding: 2px 0 30px 0;
+}
+@media (min-width: 769px) {
+  .contact-form .list li {
+    margin: 0;
+    padding: 0 0 40px;
+  }
+}
+.contact-form .list li:nth-of-type(4) {
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+@media (min-width: 769px) {
+  .contact-form .list li:nth-of-type(4) {
+    margin: 0;
+    padding: 0 0 45px;
+  }
+}
+.contact-form .list li:nth-of-type(5) {
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 769px) {
+  .contact-form .list li:nth-of-type(5) {
+    padding-bottom: 90px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  ::placeholder {
+    color: #999999;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#name {
+  font-family: "BIZ UDPゴシック";
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 8.5px;
+}
+@media (min-width: 769px) {
+  #name {
+    font-family: "BIZ UDPゴシック";
+    font-size: 24px;
+    padding: 10px 17%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+#mail {
+  font-family: "BIZ UDPゴシック";
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 8.5px;
+}
+@media (min-width: 769px) {
+  #mail {
+    font-family: "BIZ UDPゴシック";
+    font-size: 24px;
+    padding: 10px 17%;
+    border-radius: 8.5px;
+    width: 65%;
+  }
+}
+
+#phon {
+  font-family: "BIZ UDPゴシック";
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 8.5px;
+}
+@media (min-width: 769px) {
+  #phon {
+    font-family: "BIZ UDPゴシック";
+    font-size: 24px;
+    padding: 10px 17%;
+    border-radius: 8.5px;
+    width: 65%;
+  }
+}
+
+#msg {
+  font-family: "BIZ UDPゴシック";
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 8.5px;
+}
+@media (min-width: 769px) {
+  #msg {
+    font-family: "BIZ UDPゴシック";
+    font-size: 24px;
+    padding: 40px 17% 30px;
+    border-radius: 8.5px;
+    width: 65%;
+  }
+}
+
+#sub-msg {
+  font-family: "BIZ UDPゴシック";
+  border-radius: 8.5px;
+}
+@media (min-width: 769px) {
+  #sub-msg {
+    font-family: "BIZ UDPゴシック";
+    font-size: 24px;
+    padding: 120px 0;
+    width: 100%;
+  }
+}
+
+.contact-pc {
+  display: none;
+}
+@media (min-width: 769px) {
+  .contact-pc {
+    display: block;
+    border: 1px solid #000;
+    background-color: #eae8e1;
+    margin: 0 145px 150px 145px;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) {
+  .contact-pc .contact-header-pc p {
+    font-size: 16px;
+    font-family: "小塚ゴシック Pr6N";
+    margin: 0;
+    padding: 0 130px 0 0;
+  }
+}
+@media (min-width: 769px) {
+  .contact-pc .contact-header-pc {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 769px) {
+  .contact-pc .contact-header-pc .header-title-pc {
+    font-size: 36px;
+    font-family: "Bookman Old Style";
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    padding: 50px 0 120px 38px;
+  }
+}
+@media (min-width: 769px) {
+  .contact-pc .contact-header-pc .header-title-pc .title-right {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .sns-pc {
+    list-style: none;
+    display: flex;
+    padding: 40px 170px 50px 50px;
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 769px) {
+  .sns-pc li {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-pc {
+    display: block;
+  }
+}
+.container-pc .contact-form-pc {
+  min-width: 100%;
+}
+@media (min-width: 769px) {
+  .container-pc .contact-form-pc {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0 3.5%;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 769px) {
+  .container-pc .contact-form-pc .list-1 {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+}
+@media (min-width: 769px) {
+  .container-pc .contact-form-pc .list-1 li {
+    font-size: 24px;
+    font-family: "BIZ UDPゴシック";
+    color: #999999;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .container-pc .contact-form-pc .list-1 li:nth-of-type(3) {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .list-2 {
+    font-size: 24px;
+    font-family: "BIZ UDPゴシック";
+    color: #999999;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .list-3 {
+    font-size: 24px;
+    font-family: "BIZ UDPゴシック";
+    color: #999999;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+
+.contact-sp p {
+  font-family: "小塚ゴシック Pr6N";
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 60px 0;
+}
+@media (min-width: 769px) {
+  .contact-sp p {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 769px) {
+  .contact-sp {
+    display: none;
+  }
+}
+
+.sub-sns {
+  list-style: none;
+  font-size: 24px;
+  display: flex;
+}
+
+.sns {
+  font-size: 24px;
+  margin: 0 11rem 3.7rem 11rem;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+@media (min-width: 769px) {
+  .sns {
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 370px;
+  }
+}
+.sns ul {
+  padding: 0;
+}
+
+.copyright {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
